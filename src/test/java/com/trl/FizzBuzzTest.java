@@ -12,7 +12,7 @@ class FizzBuzzTest {
 
 	@ParameterizedTest
 	@MethodSource("provideResults")
-	void runningSum(final int n , final List<String> results) {
+	void fizzBuzz(final int n , final List<String> results) {
 		assertThat(FizzBuzz.fizzBuzz(n)).isEqualTo(results);
 	}
 

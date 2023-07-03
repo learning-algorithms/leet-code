@@ -11,7 +11,7 @@ class RichestCustomerWealthTest {
 
 	@ParameterizedTest
 	@MethodSource("provideResults")
-	void runningSum(final int[][] accounts, final int wealth) {
+	void maximumWealth(final int[][] accounts, final int wealth) {
 		assertThat(RichestCustomerWealth.maximumWealth(accounts)).isEqualTo(wealth);
 	}
 
